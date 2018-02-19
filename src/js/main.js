@@ -8,11 +8,11 @@ $(function(){
 
 // Navigation link action
 	
-	$buttons.on("click", function(e){
-
+	$buttons.on("click", function(e){	
 		$buttons.removeClass("active-link");
+		if($(window).width() < 768)
+			$mobileButton.click();
 		$(this).addClass("active-link");
-		$mobileButton.click();
 		
 		var href = $(this).attr("href");
 		$("html, body").animate({
@@ -52,7 +52,7 @@ $(function(){
 			$buttons.removeClass("active-link");
 			$buttons.eq(3).addClass("active-link");
 		}
-		else {
+		else if (ypos > 50) {
 			$navbar.removeClass("nav-fixed");
 			$buttons.removeClass("active-link");
 			$buttons.eq(0).addClass("active-link");
