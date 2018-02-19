@@ -3,7 +3,8 @@
 
 .active-link {
   border-bottom: 3px solid #FC0E48;
-  padding-bottom: 27px; }
+  padding-bottom: 27px;
+  color: #FC0E48 !important; }
 
 .navbar.mobile-nav {
   background-color: rgba(0, 0, 0, 0.8);
