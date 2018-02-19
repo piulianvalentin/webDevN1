@@ -7,6 +7,7 @@ $dark-overlay : rgba(0, 0, 0, 0.7);
 .active-link {
 	border-bottom: 3px solid $pink-bg;
 	padding-bottom: 27px;
+	color: $pink-bg !important;
 }
 
 .navbar.mobile-nav {
@@ -78,6 +79,9 @@ $dark-overlay : rgba(0, 0, 0, 0.7);
 		}
 		a:hover {
 			color: $pink-bg;			
+		}
+		a:active {
+			color: #fff !important;
 		}
 	}
 }
@@ -249,4 +253,3 @@ $dark-overlay : rgba(0, 0, 0, 0.7);
 		}
 	}
 }
-
